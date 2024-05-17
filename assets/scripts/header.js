@@ -6,10 +6,12 @@ menuOpenBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   menuComponent.classList.remove("menu--hidden");
+  document.querySelector('body').style.overflowY = 'hidden';
 });
 
 menuCloseBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   menuComponent.classList.add("menu--hidden");
+  document.querySelector('body').style.overflowY = 'scroll';
 });
