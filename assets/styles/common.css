@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "./reset.css";
+@import "./header.css";
+@import "./menu.css";
+@import "./footer.css";
+
+.hidden {
+  visibility: hidden;
+}
