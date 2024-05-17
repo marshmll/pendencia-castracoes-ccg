@@ -1,11 +1,12 @@
 .menu {
   position: absolute;
-  background-color: #f0c000;
-  width: 15rem;
+  background-color: #FFCB04;
+  width: 20rem;
   height: 100vh;
   top: 0;
   left: 0;
   transition: transform 200ms ease-in-out;
+  z-index: 999;
 }
 
 .menu--hidden {
@@ -24,4 +25,44 @@
   margin-top: .3rem;
   margin-right: .3rem;
   background-color: #ffffffaa;
+  border-radius: 4px;
+}
+
+.menu__logo {
+  width: 5rem;
+  height: 5rem;
+  margin: .5rem auto;
+  background-image: url('/assets/images/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__title {
+  text-align: center;
+  font-family: 'Joti One', serif;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.menu__subtitle {
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.menu__list {
+  text-align: center;
+}
+
+.menu__list li {
+  margin: .7rem 0;
+}
+
+.menu__list li:hover {
+  font-weight: 500;
+}
+
+.menu__list:last-child {
+  margin-bottom: 0;
 }
