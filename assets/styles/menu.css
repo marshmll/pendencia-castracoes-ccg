@@ -59,7 +59,7 @@
   margin: .7rem 0;
 }
 
-.menu__list li:hover {
+.menu__list li a:hover {
   font-weight: 500;
 }
 

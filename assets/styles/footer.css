@@ -1,0 +1,39 @@
+.footer {
+  color: white;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.6rem;
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+}
+
+.footer__col {
+  width: 33.33%;
+  text-align: center;
+
+  .footer__subtitle {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .footer__list li {
+    margin-bottom: 1rem;
+  }
+
+  .footer__list li a:hover {
+    font-weight: 500;
+  }
+}
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
