@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/assets/styles/common.css" />
     <link rel="stylesheet" href="/assets/styles/index/index.css" />
-
     <title>Login | Castrações | Crazy Cat Gang</title>
   </head>
 
@@ -55,15 +54,17 @@
       <section class="login">
         <div class="login-container">
           <h2 class="login__title">LOGIN</h2>
-          <label for="user" class="login__field">
-            Usuário
-            <input type="text" id="user" />
-          </label>
-          <label for="password" class="login__field">
-            Senha
-            <input type="password" id="password" />
-          </label>
-          <button class="login__btn">ENTRAR</button>
+          <form id="login-form">
+              <label for="user" class="login__field">
+                Usuário
+                <input required type="text" id="user" />
+              </label>
+              <label for="password" class="login__field">
+                Senha
+                <input required type="password" id="password" />
+              </label>
+              <button type="submit" class="login__btn" id="login-btn">ENTRAR</button>
+          </form>
         </div>
       </section>
     </main>
@@ -106,6 +107,7 @@
         <span>CCG © 2024</span>
       </div>
     </footer>
-    <script src="/assets/scripts/header.js"></script>
+    <script type="module" src="/assets/scripts/auth.js"></script>
+    <script type="module" src="/assets/scripts/header.js"></script>
   </body>
 </html>
