@@ -1,3 +1,5 @@
+import cipherUtil from "./cipher.js";
+
 const token = localStorage.getItem("user");
 
 if (!token) {
@@ -10,16 +12,21 @@ if (!token) {
 
 const loginForm = document.querySelector("#login-form");
 
+console.log(cipherUtil.cipher("admin"), cipherUtil.cipher("password2024"));
+
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let user = document.querySelector("#user").value;
   let password = document.querySelector("#password").value;
 
-  if (user == "admin" && password == "admin") {
+  if (
+    cipherUtil.checkMatch(user, "nmida") &&
+    cipherUtil.checkMatch(password, "wssrpoda4220")
+  ) {
     let data = {
-      userName: user,
-      password: password,
+      userName: cipherUtil.cipher(user),
+      password: cipherUtil.cipher(password),
     };
 
     localStorage.setItem("user", JSON.stringify(data));
