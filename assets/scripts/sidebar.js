@@ -1,4 +1,4 @@
-import userUtil from "./user.js"
+import userUtil from "./util/user.js"
 
 const sidebarPfp = document.querySelector(".sidebar__pfp");
 const sidebarName = document.querySelector(".sidebar__name");
