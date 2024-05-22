@@ -1,0 +1,102 @@
+* {
+  padding: 0%;
+  margin: 0;
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#opcoes {
+  padding: 30px;
+}
+
+#overview {
+  padding-top: 20px;
+}
+
+header {
+  display: flex;
+  background-color: #FFCB04;
+  /* padding: 10px; */
+  justify-content: space-around;
+  margin-right: -10%;
+  margin-left: -10%;
+}
+
+/* #logo {
+  margin-right: -5%;
+} */
+
+
+body {
+  background-image: url("anexos/gatinho-operando.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px 1080px;
+}
+
+footer {
+  color: white;
+  bottom: 0;
+  height: 130px;
+  width: 100%;
+  position: absolute;
+  background-color: #1A1A1A;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#info {
+  position: absolute;
+  background-color: #d9d9d967;
+  top: 150px;
+  right: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 2;
+  font-size:larger;
+  /* padding-left: 50px; */
+}
+
+
+#Cadastrar {
+  display: flex;
+  justify-content:left;
+  padding: 5px;
+  background-color: #d9d9d967;
+  margin-right: 85%;
+  margin-top: 20px;
+  margin-left: 60px;
+  border-radius: 10px;
+  font-size: small;
+  /* justify-content: space-around; */
+}
+
+#Cadastrar h3 {
+  padding-left: 20px;
+}
+
+#lista {
+  margin: 50px;
+  list-style: none;
+}
+
+li {
+
+  display: flex;
+  justify-content:left;
+  padding: 5px;
+  background-color: #d9d9d967;
+  margin-right: 85%;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+  font-size: small;
+}
+
+#quantidade {
+  display: flex;
+  justify-content: space-around;
+}
