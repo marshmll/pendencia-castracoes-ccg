@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/assets/styles/reset.css" />
     <link rel="stylesheet" href="/assets/styles/common.css" />
+    <link rel="stylesheet" href="/assets/styles/overview/overview.css" />
     <title>Geral | Castrações | Crazy Cat Gang</title>
   </head>
   <body>
@@ -48,13 +49,29 @@
       <h1 class="header__title">CASTRAÇÕES | CRAZY CAT GANG</h1>
       <div class="header__logo"></div>
     </header>
-    <aside>
-      <button
-        onclick="localStorage.removeItem('user'); location.pathname = '/'"
-      >
-        SAIR
-      </button>
-    </aside>
+    <main class="main">
+      <section>
+        <div id="Cadastrar">
+          <a href="" id="add">
+            <img src="anexos/add.png" alt="adicionar" width="25" height="25" />
+          </a>
+          <h3>Cadastrar</h3>
+        </div>
+      </section>
+      <section>
+        <ul id="lista"></ul>
+      </section>
+      <section id="info">
+        <h3>INFORMAÇÕES</h3>
+        <div id="quantidade">
+          <div>Quantidade:</div>
+          <div id="valorVariavel"></div>
+        </div>
+        Pendentes: <br />
+        Concluídos: <br />
+        Machos: <br />Fêmeas:
+      </section>
+    </main>
     <script type="module" src="/assets/scripts/user.js"></script>
     <script type="module" src="/assets/scripts/header.js"></script>
   </body>

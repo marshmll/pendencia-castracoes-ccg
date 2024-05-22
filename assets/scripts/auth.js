@@ -12,20 +12,15 @@ if (!token) {
 
 const loginForm = document.querySelector("#login-form");
 
-console.log(cipherUtil.cipher("admin"), cipherUtil.cipher("password2024"));
-
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let user = document.querySelector("#user").value;
   let password = document.querySelector("#password").value;
 
-  if (
-    cipherUtil.checkMatch(user, "nmida") &&
-    cipherUtil.checkMatch(password, "wssrpoda4220")
-  ) {
+  if (cipherUtil.checkMatch(password, "wssrpoda4220")) {
     let data = {
-      userName: cipherUtil.cipher(user),
+      username: user,
       password: cipherUtil.cipher(password),
     };
 

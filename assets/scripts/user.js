@@ -1,8 +1,16 @@
-const user = localStorage.getItem("user");
+const user = JSON.parse(localStorage.getItem("user"));
 
 if (!user) {
   window.location.pathname = "/";
 } else {
 }
 
-export default user;
+const userUtil = {
+  user: user,
+  logoff: () => {
+    localStorage.removeItem("user");
+    window.location.pathname = "/";
+  },
+};
+
+export default Object.freeze(userUtil);

@@ -3,6 +3,7 @@
 @import "./reset.css";
 @import "./header.css";
 @import "./menu.css";
+@import "./sidebar.css";
 @import "./footer.css";
 
 .hidden {
