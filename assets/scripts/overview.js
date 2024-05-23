@@ -20,7 +20,7 @@ document.getElementById('add').addEventListener('click', function(event) {
   <div class="topicos">
     <p>Nome: ${nome}</p> 
     <p>Raça: ${raca}</p>
-    <p>Castrado? ${castrado}</p>
+    <p>Castrado[S/N]? ${castrado}</p>
     <button class="remove">Remover</button>
   </div>
 `;
@@ -32,3 +32,4 @@ document.getElementById('add').addEventListener('click', function(event) {
   // valor += 1;
   // quantity.innerHTML = valor;
 });
+

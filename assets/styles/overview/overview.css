@@ -22,12 +22,13 @@ header {
   background-attachment: fixed;
   min-height: calc(100vh - 5rem);
   padding-top: 8%;
+  /* background-color: rgba(0, 0, 0, 0.438); */
 }
 
 #info {
   position: absolute;
-  background-color: #d9d9d967;
-  top: 150px;
+  background-color: #d9d9d9cc;
+  top: 200px;
   right: 100px;
   padding: 20px;
   border-radius: 10px;
@@ -36,13 +37,17 @@ header {
   /* padding-left: 50px; */
 }
 
+#info h3 {
+  font-weight: bolder;
+}
+
 
 #Cadastrar {
   display: flex;
   justify-content:left;
   padding: 10px;
   padding-top: 20px;
-  background-color: #d9d9d967;
+  background-color: #d9d9d9bb;
   margin-right: 85%;
   margin-left: 60px;
   border-radius: 10px;
@@ -53,22 +58,26 @@ header {
 
 #Cadastrar h3 {
   padding-left: 20px;
+
 }
 
 #lista {
-  margin: 50px;
+  padding-bottom: 20px;
   list-style: none;
   position: relative;
+  
   li {
     display: flex;
     justify-content:left;
     padding: 20px;
-    background-color: #d9d9d967;
+    background-color: #d9d9d9e8;
     margin-right: 85%;
     margin-top: 10px;
     margin-left: 30px;
     border-radius: 10px;
     font-size: small;
+    /* margin-bottom: 2%; */
+    
   }
 }
 
@@ -93,13 +102,22 @@ header {
   
 }
 
-#remove {
-  background-color: rgb(214, 173, 97);
+.remove {
+  background-color: #d6ad61;
   border-radius: 10px;
   padding: 10px;
-  position: absolute;
-  bottom: 0px;
-  left: 350px;
-  /* margin-right: 10%; */
 }
 
+hr {
+  border: none;         /* Remove a borda padrão */
+  height: 2px;          /* Define a altura da linha */
+  background-color: #cfa10a; /* Cor da linha */
+  margin: 20px 0;       /* Margens superiores e inferiores */
+}
+
+#info hr {
+  /* border:         */
+  height: 2px;          
+  background-color: #000000; 
+  margin-top: 10px;
+}
