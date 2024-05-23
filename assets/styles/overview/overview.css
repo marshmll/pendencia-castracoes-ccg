@@ -34,6 +34,7 @@ header {
   border-radius: 10px;
   line-height: 2;
   font-size:larger;
+ 
   /* padding-left: 50px; */
 }
 
@@ -52,7 +53,11 @@ header {
   margin-left: 60px;
   border-radius: 10px;
   font-size: small;
-  /* justify-content: space-around; */
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+#Cadastrar:hover {
+  transform: scale(1.05);
 }
 
 
@@ -67,24 +72,27 @@ header {
   position: relative;
   
   li {
+    color: white;
     display: flex;
     justify-content:left;
     padding: 20px;
-    background-color: #d9d9d9e8;
+    background-image: linear-gradient(to bottom, #f5a700ef, #00000075);
     margin-right: 85%;
     margin-top: 10px;
     margin-left: 30px;
     border-radius: 10px;
     font-size: small;
-    /* margin-bottom: 2%; */
+    border: 2px solid #5a3211;
+    transition: background-color 0.3s, transform 0.3s; 
     
+  }
+
+  li:hover {
+    transform: scale(1.05);
   }
 }
 
-#quantidade {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 #lista li {
   padding: 20px;
@@ -111,7 +119,7 @@ header {
 hr {
   border: none;         /* Remove a borda padrão */
   height: 2px;          /* Define a altura da linha */
-  background-color: #cfa10a; /* Cor da linha */
+  background-color: #000000; /* Cor da linha */
   margin: 20px 0;       /* Margens superiores e inferiores */
 }
 
