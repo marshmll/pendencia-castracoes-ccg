@@ -83,8 +83,9 @@ header {
   font-size: medium;
 }
 
-#imagem {
+.imagem {
   margin-right: 20px;
+  border-radius: 5px;
 }
 
 .topicos p{
@@ -101,3 +102,4 @@ header {
   left: 350px;
   /* margin-right: 10%; */
 }
+
