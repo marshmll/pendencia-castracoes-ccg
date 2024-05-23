@@ -42,6 +42,10 @@ header {
   font-weight: bolder;
 }
 
+#add {
+  margin-top: -5px
+}
+
 
 #Cadastrar {
   display: flex;
