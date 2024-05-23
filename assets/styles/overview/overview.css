@@ -15,14 +15,14 @@ header {
 
 
 .main {
-  background-image: url("/assets/images/gatinho-operando.jpg");
+  /* background-image: url("/assets/images/gatinho-operando.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   min-height: calc(100vh - 5rem);
   padding-top: 8%;
-  /* background-color: rgba(0, 0, 0, 0.438); */
+  background-image: linear-gradient(to bottom, #000000dc, #0000005d), url("/assets/images/gatinho-operando.jpg");
 }
 
 #info {
