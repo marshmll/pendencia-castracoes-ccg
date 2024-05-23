@@ -98,7 +98,7 @@
 }
 
 .main-fieldset__image {
-  color: black;
+  color: #777777;
   width: 20rem;
   height: 20rem;
   border: 2px solid #585858;
@@ -106,6 +106,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   label {
     cursor: pointer;

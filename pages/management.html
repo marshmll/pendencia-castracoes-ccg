@@ -86,13 +86,13 @@
                 <input type="text" id="cat_color" required />
                 <label for="cat_sex">Sexo*</label>
                 <select id="cat_sex" required>
-                  <option value="cat_masculine">Masculino</option>
-                  <option value="cat_feminine">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
                 </select>
               </div>
               <div class="main-fieldset-info__row">
                 <label for="cat_diseases">Doença(s)? Se sim, qual(is)?</label>
-                <textarea for="cat_diseases"></textarea>
+                <textarea id="cat_diseases"></textarea>
               </div>
               <div class="main-fieldset-info__row">
                 <span>CASTRADO?*</span>
@@ -115,9 +115,9 @@
           </fieldset>
           <fieldset class="secondary-fieldset">
             <div>
-              <label for="cat_history">Histórico</label>
+              <label for="cat_historic">Histórico</label>
               <textarea
-                id="cat_history"
+                id="cat_historic"
                 class="secondary-fieldset__history"
               ></textarea>
             </div>
