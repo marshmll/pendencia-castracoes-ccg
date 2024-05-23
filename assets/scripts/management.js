@@ -1,6 +1,6 @@
 import client from "./util/client.js";
 
-const catId = window.location.href.split('?id=')[1];
+const catId = window.location.href.split("?id=")[1];
 console.log(catId);
 
 const catImage = document.querySelector(".main-fieldset__image");
@@ -82,13 +82,37 @@ async function renderManagement() {
 
     let data = await client.queryCms(query);
     setManagementFormData(data);
+  } else {
+    query = `
+    {
+      allCatRecords {
+        id
+        image {
+          url
+        }
+        name
+        weight
+        race
+        color
+        sex
+        diseases
+        castrated
+        behavior
+        historic
+        attachments {
+          url
+        }
+        _status
+        _firstPublishedAt
+      }
+    
+      _allCatRecordsMeta {
+        count
+      }
+    }`;
+
+    let data = await client.queryCms(query);
   }
-  else {
-    alert("NOVO")
-  }
-
-
-
 }
 
 renderManagement();

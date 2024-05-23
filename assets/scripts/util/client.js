@@ -24,7 +24,7 @@ const client = {
       }
 
       const responseJson = await response.json();
-      // console.log(await responseJson.data);
+      console.log(await responseJson.data);
       return responseJson.data;
     } catch (error) {
       throw new Error(`Erro ao processar a requisição: ${error.message}`);

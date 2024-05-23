@@ -66,3 +66,9 @@
 .menu--hidden {
   transform: translateX(-100%);
 }
+
+@media (max-width: 768px) {
+  .menu {
+    width: 15rem;
+  }
+}

@@ -37,3 +37,18 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 425px) {
+  .footer__content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__col {
+    margin-bottom: 2rem;
+
+    .footer__subtitle {
+      margin-bottom: 1rem;
+    }
+  }
+} 

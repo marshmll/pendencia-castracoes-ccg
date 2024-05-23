@@ -36,3 +36,20 @@
     background-repeat: no-repeat;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    .header__title {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .header {
+    .header__title {
+      display: none;
+    }
+  }
+}
