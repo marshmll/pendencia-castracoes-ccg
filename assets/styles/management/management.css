@@ -121,6 +121,7 @@
     position: absolute;
     font-size: 1.3rem;
     font-style: italic;
+    opacity: 80%;
   }
 
   img {

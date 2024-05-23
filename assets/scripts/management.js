@@ -1,5 +1,8 @@
 import client from "./util/client.js";
 
+const catId = window.location.href.split('?id=')[1];
+console.log(catId);
+
 const catImage = document.querySelector(".main-fieldset__image");
 const catNameField = document.getElementById("cat_name");
 const catWeightField = document.getElementById("cat_weight");
@@ -42,37 +45,50 @@ function setManagementFormData(data) {
 }
 
 async function renderManagement() {
-  let query = `
-  {
-    allCatRecords {
-      id
-      image {
-        url
-      }
-      name
-      weight
-      race
-      color
-      sex
-      diseases
-      castrated
-      behavior
-      historic
-      attachments {
-        url
-      }
-      _status
-      _firstPublishedAt
-    }
-  
-    _allCatRecordsMeta {
-      count
-    }
-  }`;
+  let query = "";
 
-  let data = await client.queryCms(query);
+  if (catId != "new") {
+    query = `
+    {
+      allCatRecords(
+        filter: {
+          id: { eq: "${catId}" }
+        }
+      ) {
+        id
+        image {
+          url
+        }
+        name
+        weight
+        race
+        color
+        sex
+        diseases
+        castrated
+        behavior
+        historic
+        attachments {
+          url
+        }
+        _status
+        _firstPublishedAt
+      }
+    
+      _allCatRecordsMeta {
+        count
+      }
+    }`;
 
-  setManagementFormData(data);
+    let data = await client.queryCms(query);
+    setManagementFormData(data);
+  }
+  else {
+    alert("NOVO")
+  }
+
+
+
 }
 
 renderManagement();
