@@ -1,10 +1,4 @@
-/* * {
-  padding: 0%;
-  margin: 0;
-  font-family: "Joti One", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
+
 
 #opcoes {
   padding: 30px;
@@ -14,67 +8,128 @@
   padding-top: 20px;
 }
 
-/* #logo {
-  margin-right: -5%;
-} */
+header {
+  position: fixed;
+  z-index: 1000;
+}
 
 
 .main {
-  background-image: url("/assets/images/gatinho-operando.jpg");
+  /* background-image: url("/assets/images/gatinho-operando.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   min-height: calc(100vh - 5rem);
+  padding-top: 8%;
+  background-image: linear-gradient(to bottom, #000000dc, #0000005d), url("/assets/images/gatinho-operando.jpg");
 }
 
 #info {
   position: absolute;
-  background-color: #d9d9d967;
-  top: 150px;
+  background-color: #d9d9d9cc;
+  top: 200px;
   right: 100px;
   padding: 20px;
   border-radius: 10px;
   line-height: 2;
   font-size:larger;
+ 
   /* padding-left: 50px; */
+}
+
+#info h3 {
+  font-weight: bolder;
+}
+
+#add {
+  margin-top: -5px
 }
 
 
 #Cadastrar {
   display: flex;
   justify-content:left;
-  padding: 5px;
-  background-color: #d9d9d967;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: #d9d9d9bb;
   margin-right: 85%;
-  margin-top: 20px;
   margin-left: 60px;
   border-radius: 10px;
   font-size: small;
-  /* justify-content: space-around; */
+  transition: background-color 0.3s, transform 0.3s; 
 }
+
+#Cadastrar:hover {
+  transform: scale(1.05);
+}
+
 
 #Cadastrar h3 {
   padding-left: 20px;
+
 }
 
 #lista {
-  margin: 50px;
+  padding-bottom: 20px;
   list-style: none;
-
+  position: relative;
+  
   li {
+    color: white;
     display: flex;
     justify-content:left;
-    padding: 5px;
-    background-color: #d9d9d967;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #f5a700ef, #00000075);
     margin-right: 85%;
     margin-top: 10px;
     margin-left: 30px;
     border-radius: 10px;
     font-size: small;
+    border: 2px solid #5a3211;
+    transition: background-color 0.3s, transform 0.3s; 
+    
+  }
+
+  li:hover {
+    transform: scale(1.05);
   }
 }
 
-#quantidade {
-  display: flex;
-  justify-content: space-around;
+
+
+#lista li {
+  padding: 20px;
+  padding-right: 30%;
+  font-size: medium;
+}
+
+.imagem {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.topicos p{
+  padding-bottom: 20px;
+  
+}
+
+.remove {
+  background-color: #d6ad61;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+hr {
+  border: none;         /* Remove a borda padrão */
+  height: 2px;          /* Define a altura da linha */
+  background-color: #000000; /* Cor da linha */
+  margin: 20px 0;       /* Margens superiores e inferiores */
+}
+
+#info hr {
+  /* border:         */
+  height: 2px;          
+  background-color: #000000; 
+  margin-top: 10px;
 }

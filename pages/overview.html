@@ -52,27 +52,89 @@
     <main class="main">
       <section>
         <div id="Cadastrar">
-          <a href="" id="add">
-            <img src="anexos/add.png" alt="adicionar" width="25" height="25" />
+          <!-- <a href="management.html?id=new" id="add"> -->
+          <a href="" >
+            <img src="/assets/images/icons/add.png" alt="adicionar" width="25" height="25" id="add"/>
           </a>
+            
+          <!-- </a> -->
           <h3>Cadastrar</h3>
+          
         </div>
+        <hr id="upper">
       </section>
+      
       <section>
-        <ul id="lista"></ul>
+        <ul id="lista">
+          
+        </ul>
       </section>
       <section id="info">
         <h3>INFORMAÇÕES</h3>
+        <hr>
         <div id="quantidade">
-          <div>Quantidade:</div>
-          <div id="valorVariavel"></div>
+          <div>Quantidade: </div>
+          <div id="valorQuantidade"></div>
         </div>
-        Pendentes: <br />
-        Concluídos: <br />
-        Machos: <br />Fêmeas:
+        <div>
+          <div>Pendentes: </div>
+          <div id="valorPendentes"></div>
+        </div>
+        <div>
+          <div>Concluídos: </div>
+          <div id="valorConcluídos"></div>
+        </div>
+        <div>
+          <div>Machos: </div>
+          <div id="valorMachos"></div>
+        </div>
+        <div>
+          <div>Fêmeas: </div>
+          <div id="valorFemeas"></div>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__col">
+          <h3 class="footer__subtitle">Redes Sociais</h3>
+          <ul class="footer__list">
+            <li><a href="">Instagram </a></li>
+            <li><a href="">Facebook </a></li>
+            <li><a href="">WhatsApp</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__subtitle">Contato</h3>
+          <ul class="footer__list">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__subtitle">Navegação</h3>
+          <ul class="footer__list">
+            <li><a href="/">Login</a></li>
+            <li><a href="/pages/overview.html?id=new">Visão Geral</a></li>
+            <li><a href="/pages/management.html">Cadastrar Gato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <img
+          src="/assets/images/logo-branca.png"
+          title="Logotipo Crazy Cat Gang"
+          width="70px"
+          height="70px"
+          alt="Logotipo Crazy Cat Gang"
+        />
+        <span>CCG © 2024</span>
+      </div>
+    </footer>
     <script type="module" src="/assets/scripts/util/user.js"></script>
     <script type="module" src="/assets/scripts/header.js"></script>
+    <script src="/assets/scripts/overview.js"></script>
   </body>
 </html>
