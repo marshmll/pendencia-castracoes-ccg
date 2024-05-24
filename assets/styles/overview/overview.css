@@ -40,6 +40,7 @@ header {
 
 #info h3 {
   font-weight: bolder;
+  padding-right: 50px;
 }
 
 #add {
@@ -80,6 +81,7 @@ header {
     display: flex;
     justify-content:left;
     padding: 20px;
+    /* padding-right: 200px; */
     background-image: linear-gradient(to bottom, #f5a700ef, #00000075);
     margin-right: 85%;
     margin-top: 10px;
@@ -123,7 +125,7 @@ header {
 hr {
   border: none;         /* Remove a borda padrão */
   height: 2px;          /* Define a altura da linha */
-  background-color: #000000; /* Cor da linha */
+  background-color: #7c540a8e; /* Cor da linha */
   margin: 20px 0;       /* Margens superiores e inferiores */
 }
 
@@ -132,4 +134,13 @@ hr {
   height: 2px;          
   background-color: #000000; 
   margin-top: 10px;
+}
+
+footer {
+  z-index: 1000;
+}
+
+.valores {
+  display: flex;
+  justify-content: space-around;
 }
