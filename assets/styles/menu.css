@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   transition: transform 200ms ease-in-out;
-  z-index: 999;
+  z-index: 9999;
 
   .menu__btn {
     background-color: transparent;
