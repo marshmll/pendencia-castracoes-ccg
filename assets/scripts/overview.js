@@ -21,14 +21,17 @@ document.getElementById("add").addEventListener("click", function (event) {
     let castrado = prompt("Castrado? ");
 
     novoGato.innerHTML = `
-  <img src="/assets/images/gato1.jpg" alt="foto" width="120" height="120" class="imagem">
-  <div class="topicos">
-    <p>Nome: ${nome}</p> 
-    <p>Raça: ${raca}</p>
-    <p>Castrado[S/N]? ${castrado}</p>
-    <button class="remove">Remover</button>
-  </div>
-`;
+    <img src="/assets/images/gato1.jpg" alt="foto" width="120" height="120" class="imagem">
+    <div class="topicos">
+      <p>Nome: ${nome}</p> 
+      <p>Raça: ${raca}</p>
+      <p>Castrado[S/N]? ${castrado}</p>
+      <div class="botoes">
+        <button class="remove">Remover</button>
+        <button class="remove">Editar</button>
+      </div>
+    </div>
+  `;
 
     quantidade += 1;
     sobrando += 1;

@@ -121,10 +121,19 @@ header {
   
 }
 
+.botoes {
+  display: flex;
+  align-content: space-around;
+  gap: 10px;
+  padding-left: 100px;
+  /* padding-bottom: -50px; */
+}
+
 .remove {
   background-color: #d6ad61;
   border-radius: 10px;
   padding: 10px;
+  
 }
 
 hr {
