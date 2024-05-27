@@ -22,14 +22,14 @@ header {
   background-attachment: fixed;
   min-height: calc(100vh - 5rem);
   padding-top: 5rem;
-  background-image: linear-gradient(to bottom, #000000dc, #0000005d), url("/assets/images/gatinho-operando.jpg");
+  background-image: linear-gradient(to bottom, #0000002f, #000000e5), url("/assets/images/gatinho-operando.jpg");
 }
 
 #info {
   position: absolute;
   background-color: #d9d9d983;
   top: 200px;
-  right: 100px;
+  right: 170px;
   padding: 20px;
   border-radius: 10px;
   line-height: 2;
@@ -40,7 +40,7 @@ header {
 
 #info h3 {
   font-weight: bolder;
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
 #add {
@@ -86,9 +86,8 @@ header {
     display: flex;
     justify-content:left;
     padding: 20px;
-    /* padding-right: 200px; */
     background-image: linear-gradient(to bottom, #f5a700ef, #00000075);
-    margin-right: 85%;
+    margin-right:45%;
     margin-top: 10px;
     margin-left: 30px;
     border-radius: 10px;
@@ -116,8 +115,13 @@ header {
   border-radius: 5px;
 }
 
+.topicos {
+  margin-right: 100px;
+}
+
 .topicos p{
   padding-bottom: 20px;
+  /* padding-right: ; */
   
 }
 
@@ -126,12 +130,14 @@ header {
   align-content: space-around;
   gap: 10px;
   padding-left: 20px;
+  margin-left: 100%;
 }
 
 .remove {
   background-color: #d6ad61;
   border-radius: 10px;
   padding: 10px;
+  
   
 }
 
