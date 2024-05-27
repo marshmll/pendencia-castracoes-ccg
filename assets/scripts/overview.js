@@ -29,6 +29,7 @@ document.getElementById("add").addEventListener("click", function (event) {
       <div class="botoes">
         <button class="remove">Remover</button>
         <button class="remove">Editar</button>
+        <button class="remove">Visualizar</button>
       </div>
     </div>
   `;
