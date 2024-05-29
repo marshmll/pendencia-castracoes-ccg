@@ -12,7 +12,7 @@ let concluidos = 0;
 let machos = 0;
 let femeas = 0;
 
-document.getElementById("add").addEventListener("click", function (event) {
+document.getElementById("Cadastrar").addEventListener("click", function (event) {
     event.preventDefault();
 
     let novoGato = document.createElement("li");
