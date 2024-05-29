@@ -19,7 +19,7 @@ const catBehaviorField = document.getElementById("cat_behavior");
 function setManagementFormData(data) {
     console.log(data);
 
-    let catImageUrl = data.allCatRecords[0].image.url;
+    let catImageUrl = data.allCatRecords[0].image ? data.allCatRecords[0].image.url : "https://i.pinimg.com/736x/53/e8/22/53e8223abe92162e99a04fffc67dbc70.jpg";
     let catName = data.allCatRecords[0].name;
     let catWeight = data.allCatRecords[0].weight;
     let catRace = data.allCatRecords[0].race;
@@ -106,7 +106,7 @@ async function renderManagement() {
 
             try {
                 const response = await fetch(
-                    `http://ccgapi.vercel.app/api/content/update/${encodeURI(
+                    `https://ccgapi.vercel.app/api/content/update/${encodeURI(
                         JSON.stringify(data)
                     )}`
                 );
@@ -117,7 +117,7 @@ async function renderManagement() {
                     );
                 }
 
-                console.log(body);
+                console.log(data);
                 window.location.pathname = "/pages/overview.html";
 
                 const responseJson = await response.json();
@@ -144,7 +144,7 @@ async function renderManagement() {
 
             try {
                 const response = await fetch(
-                    `http://ccgapi.vercel.app/api/content/create/${encodeURI(
+                    `https://ccgapi.vercel.app/api/content/create/${encodeURI(
                         JSON.stringify(body)
                     )}`
                 );
