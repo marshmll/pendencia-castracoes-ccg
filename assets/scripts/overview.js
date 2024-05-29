@@ -12,54 +12,47 @@ let concluidos = 0;
 let machos = 0;
 let femeas = 0;
 
-document.getElementById("Cadastrar").addEventListener("click", function (event) {
-    event.preventDefault();
+async function renderContent() {
+    try {
+        const response = await fetch(
+            "http://localhost:3000/api/content/all"
+        );
 
-    let novoGato = document.createElement("li");
-    let nome = prompt("Informe o nome do gato: ");
-    let raca = prompt("Informe a raça do gato: ");
-    let castrado = prompt("Castrado? ");
+        if (!response.ok) {
+            throw new Error(
+                `Erro ao fazer a requisição ao servidor: ${response.status}`
+            );
+        }
 
-    novoGato.innerHTML = `
-    <img src="/assets/images/gato1.jpg" alt="foto" width="120" height="120" class="imagem">
-    <div class="topicos">
-      <p>Nome: ${nome}</p> 
-      <p>Raça: ${raca}</p>
-      <p>Castrado[S/N]? ${castrado}</p>
-      <div class="botoes">
-        <button class="remove" id="remover">Remover</button>
-        <button class="remove" id="editar">Editar</button>
-        <button class="remove" id="visualizar">Visualizar</button>
-      </div>
-    </div>
-  `;
+        const responseJson = await response.json();
+        console.log(responseJson);
 
-    quantidade += 1;
-    sobrando += 1;
-    concluidos += 1;
-    machos += 1;
-    femeas += 1;
+        responseJson.forEach((cat) => {
+            console.log(cat);
 
-    novoGato.querySelector(".remove").addEventListener("click", function () {
-        novoGato.remove();
-        quantidade -= 1;
-        sobrando -= 1;
-        concluidos -= 1;
-        machos -= 1;
-        femeas -= 1;
+            let novoGato = document.createElement("li");
 
-        quantity.textContent = quantidade;
-        pendentes.textContent = sobrando;
-        finished.textContent = concluidos;
-        males.textContent = machos;
-        females.textContent = femeas;
-    });
+            novoGato.innerHTML = `
+				<img src="${
+                    cat.image ? cat.image.url : "https://i.pinimg.com/736x/53/e8/22/53e8223abe92162e99a04fffc67dbc70.jpg"
+                }" alt="alt" width="120" height="120" class="imagem">
+				<div class="topicos">
+					<p>Nome: ${cat.name}</p> 
+					<p>Raça: ${cat.race}</p>
+					<p>Castrado[S/N]? ${cat.castrated ? "Sim" : "Não"}</p>
+					<div class="botoes">
+						<a class="remove" id="remover">Remover</a>
+						<a class="remove" id="editar" href="/pages/management.html?id=${cat.id}">Editar</a>
+						<a class="remove" id="visualizar" href="/pages/more.html?id=${cat.id}">Visualizar</a>
+					</div>
+				</div>
+	  		`;
 
-    document.getElementById("lista").appendChild(novoGato);
+            document.getElementById("lista").appendChild(novoGato);
+        });
+    } catch (e) {
+        throw new Error(e);
+    }
+}
 
-    quantity.textContent = quantidade;
-    pendentes.textContent = sobrando;
-    finished.textContent = concluidos;
-    males.textContent = machos;
-    females.textContent = femeas;
-});
+renderContent();

@@ -86,6 +86,46 @@ async function renderManagement() {
 
         let data = await client.queryCms(query);
         setManagementFormData(data);
+
+        catForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const data = {
+                id: catId,
+                name: catNameField.value,
+                weight: catWeightField.value,
+                race: catRaceField.value,
+                color: catColorField.value,
+                sex: catSexField.value,
+                diseases: catDiseasesField.value,
+                castrated: catCastratedYesField.checked,
+                historic: catHistoricField.value,
+                attachments: [],
+                behavior: catBehaviorField.value,
+            };
+
+            try {
+                const response = await fetch(
+                    `http://ccgapi.vercel.app/api/content/update/${encodeURI(
+                        JSON.stringify(data)
+                    )}`
+                );
+
+                if (!response.ok) {
+                    throw new Error(
+                        `Erro ao fazer a requisição ao servidor: ${response.status}`
+                    );
+                }
+
+                console.log(body);
+                window.location.pathname = "/pages/overview.html";
+
+                const responseJson = await response.json();
+                console.log(responseJson);
+            } catch (e) {
+                throw new Error(e);
+            }
+        });
     } else {
         catForm.addEventListener("submit", async (e) => {
             e.preventDefault();
