@@ -178,6 +178,7 @@ footer {
 
 #remover:hover {
   transform: scale(1.10);
+  cursor: pointer;
 }
 
 #editar {
@@ -188,7 +189,7 @@ footer {
 
 #editar:hover {
   transform: scale(1.10);
-
+  cursor: pointer;
 }
 
 #visualizar {
@@ -199,4 +200,5 @@ footer {
 
 #visualizar:hover {
   transform: scale(1.10);
+  cursor: pointer;
 }
