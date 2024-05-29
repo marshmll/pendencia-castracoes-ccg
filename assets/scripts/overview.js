@@ -12,54 +12,54 @@ let concluidos = 0;
 let machos = 0;
 let femeas = 0;
 
-// document.getElementById("add").addEventListener("click", function (event) {
-//     event.preventDefault();
+document.getElementById("add").addEventListener("click", function (event) {
+    event.preventDefault();
 
-//     let novoGato = document.createElement("li");
-//     let nome = prompt("Informe o nome do gato: ");
-//     let raca = prompt("Informe a raça do gato: ");
-//     let castrado = prompt("Castrado? ");
+    let novoGato = document.createElement("li");
+    let nome = prompt("Informe o nome do gato: ");
+    let raca = prompt("Informe a raça do gato: ");
+    let castrado = prompt("Castrado? ");
 
-//     novoGato.innerHTML = `
-//     <img src="/assets/images/gato1.jpg" alt="foto" width="120" height="120" class="imagem">
-//     <div class="topicos">
-//       <p>Nome: ${nome}</p> 
-//       <p>Raça: ${raca}</p>
-//       <p>Castrado[S/N]? ${castrado}</p>
-//       <div class="botoes">
-//         <button class="remove">Remover</button>
-//         <button class="remove">Editar</button>
-//         <button class="remove">Visualizar</button>
-//       </div>
-//     </div>
-//   `;
+    novoGato.innerHTML = `
+    <img src="/assets/images/gato1.jpg" alt="foto" width="120" height="120" class="imagem">
+    <div class="topicos">
+      <p>Nome: ${nome}</p> 
+      <p>Raça: ${raca}</p>
+      <p>Castrado[S/N]? ${castrado}</p>
+      <div class="botoes">
+        <button class="remove" id="remover">Remover</button>
+        <button class="remove" id="editar">Editar</button>
+        <button class="remove" id="visualizar">Visualizar</button>
+      </div>
+    </div>
+  `;
 
-//     quantidade += 1;
-//     sobrando += 1;
-//     concluidos += 1;
-//     machos += 1;
-//     femeas += 1;
+    quantidade += 1;
+    sobrando += 1;
+    concluidos += 1;
+    machos += 1;
+    femeas += 1;
 
-//     novoGato.querySelector(".remove").addEventListener("click", function () {
-//         novoGato.remove();
-//         quantidade -= 1;
-//         sobrando -= 1;
-//         concluidos -= 1;
-//         machos -= 1;
-//         femeas -= 1;
+    novoGato.querySelector(".remove").addEventListener("click", function () {
+        novoGato.remove();
+        quantidade -= 1;
+        sobrando -= 1;
+        concluidos -= 1;
+        machos -= 1;
+        femeas -= 1;
 
-//         quantity.textContent = quantidade;
-//         pendentes.textContent = sobrando;
-//         finished.textContent = concluidos;
-//         males.textContent = machos;
-//         females.textContent = femeas;
-//     });
+        quantity.textContent = quantidade;
+        pendentes.textContent = sobrando;
+        finished.textContent = concluidos;
+        males.textContent = machos;
+        females.textContent = femeas;
+    });
 
-//     document.getElementById("lista").appendChild(novoGato);
+    document.getElementById("lista").appendChild(novoGato);
 
-//     quantity.textContent = quantidade;
-//     pendentes.textContent = sobrando;
-//     finished.textContent = concluidos;
-//     males.textContent = machos;
-//     females.textContent = femeas;
-// });
+    quantity.textContent = quantidade;
+    pendentes.textContent = sobrando;
+    finished.textContent = concluidos;
+    males.textContent = machos;
+    females.textContent = femeas;
+});
