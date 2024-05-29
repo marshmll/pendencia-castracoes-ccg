@@ -170,7 +170,7 @@ footer {
 }
 
 #remover {
-  background-color: rgba(255, 0, 0, 0.308);
+  background-image: linear-gradient(to bottom, #f50000a1, #5e0202d5);
   border: 2px solid #5c0404;
   transition: background-color 0.3s, transform 0.3s; 
   
@@ -182,7 +182,7 @@ footer {
 }
 
 #editar {
-  background-color: rgba(2, 14, 185, 0.349);
+  background-image: linear-gradient(to bottom, #0805b4d5, #050127d3);
   border: 2px solid #03024d;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -193,7 +193,7 @@ footer {
 }
 
 #visualizar {
-  background-color: rgba(4, 187, 13, 0.342);
+  background-image: linear-gradient(to bottom, #05b405b2, #063002d3);
   border: 2px solid #035507;
   transition: background-color 0.3s, transform 0.3s;
 }
