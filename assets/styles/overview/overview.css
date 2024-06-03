@@ -57,7 +57,7 @@ header {
   padding: 10px;
   padding-top: 20px;
   background-color: #d9d9d986;
-  margin-right: 85%;
+  /* margin-right: 85%; */
   margin-left: 60px;
   border-radius: 10px;
   font-size: small;
@@ -131,7 +131,7 @@ header {
   align-content: space-around;
   gap: 10px;
   padding-left: 20px;
-  margin-left: 100%;
+  /* margin-left: 100%; */
   transition: background-color 0.3s, transform 0.3s; 
 }
 
