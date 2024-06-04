@@ -19,7 +19,9 @@ const catBehaviorField = document.getElementById("cat_behavior");
 function setManagementFormData(data) {
     console.log(data);
 
-    let catImageUrl = data.allCatRecords[0].image ? data.allCatRecords[0].image.url : "https://i.pinimg.com/736x/53/e8/22/53e8223abe92162e99a04fffc67dbc70.jpg";
+    let catImageUrl = data.allCatRecords[0].image
+        ? data.allCatRecords[0].image.url
+        : "https://i.pinimg.com/736x/53/e8/22/53e8223abe92162e99a04fffc67dbc70.jpg";
     let catName = data.allCatRecords[0].name;
     let catWeight = data.allCatRecords[0].weight;
     let catRace = data.allCatRecords[0].race;
@@ -90,6 +92,10 @@ async function renderManagement() {
         catForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
+            document.querySelector(".form__button--submit").innerHTML = `
+                <span class="form__button--loading"></span>
+            `;
+
             const data = {
                 id: catId,
                 name: catNameField.value,
@@ -129,6 +135,11 @@ async function renderManagement() {
     } else {
         catForm.addEventListener("submit", async (e) => {
             e.preventDefault();
+
+            document.querySelector(".form__button--submit").innerHTML = `
+                <span class="form__button--loading"></span>
+            `;
+
             const body = {
                 name: catNameField.value,
                 weight: catWeightField.value,
@@ -165,6 +176,35 @@ async function renderManagement() {
             }
         });
     }
+
+    document
+        .querySelector(".form__button--delete")
+        .addEventListener("click", async (e) => {
+            e.preventDefault();
+
+            document.querySelector(".form__button--delete").innerHTML = `
+                <span class="form__button--loading"></span>
+            `;
+
+            try {
+                const response = await fetch(
+                    `https://ccgapi.vercel.app/api/content/delete/${catId}`
+                );
+
+                if (!response.ok) {
+                    throw new Error(
+                        `Erro ao fazer a requisição ao servidor: ${response.status}`
+                    );
+                }
+
+                window.location.pathname = "/pages/overview.html";
+
+                const responseJson = await response.json();
+                console.log(responseJson);
+            } catch (e) {
+                throw new Error(e);
+            }
+        });
 }
 
 renderManagement();
