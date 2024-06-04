@@ -15,7 +15,7 @@ let femeas = 0;
 async function renderContent() {
     try {
         const response = await fetch(
-            "http://ccgapi.vercel.app/api/content/all"
+            "https://ccgapi.vercel.app/api/content/all"
         );
 
         if (!response.ok) {
