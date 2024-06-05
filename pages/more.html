@@ -1,54 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/assets/styles/reset.css" />
-    <link rel="stylesheet" href="/assets/styles/common.css" />
-    <title>Nome do Gato | Castrações | Crazy Cat Gang</title>
-  </head>
-  <body>
-    <nav class="menu menu--hidden">
-      <button class="menu__btn">x</button>
-      <div>
-        <div class="menu__logo"></div>
-        <h2 class="menu__title">CRAZY CAT GANG</h2>
-        <h3 class="menu__subtitle">NAVEGAÇÃO</h3>
-        <ul class="menu__list">
-          <li>
-            <a href="/">Login</a>
-          </li>
-          <li>
-            <a href="/pages/overview.html">Visão Geral</a>
-          </li>
-          <li>
-            <a href="/pages/management.html?id=new">Cadastrar Gato</a>
-          </li>
-        </ul>
-        <h3 class="menu__subtitle">REDES SOCIAIS</h3>
-        <ul class="menu__list">
-          <li>
-            <a href="">Instagram</a>
-          </li>
-          <li>
-            <a href="">Facebook</a>
-          </li>
-          <li>
-            <a href="">WhatsApp</a>
-          </li>
-          <li>
-            <a href="">Blog</a>
-          </li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/styles/reset.css" />
+  <link rel="stylesheet" href="/assets/styles/common.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Nome do Gato | Castrações | Crazy Cat Gang</title>
+</head>
+
+<body>
+  <nav class="menu menu--hidden">
+    <button class="menu__btn">x</button>
+    <div>
+      <div class="menu__logo"></div>
+      <h2 class="menu__title">CRAZY CAT GANG</h2>
+      <h3 class="menu__subtitle">NAVEGAÇÃO</h3>
+      <ul class="menu__list">
+        <li>
+          <a href="/">Login</a>
+        </li>
+        <li>
+          <a href="/pages/overview.html">Visão Geral</a>
+        </li>
+        <li>
+          <a href="/pages/management.html?id=new">Cadastrar Gato</a>
+        </li>
+      </ul>
+      <h3 class="menu__subtitle">REDES SOCIAIS</h3>
+      <ul class="menu__list">
+        <li>
+          <a href="">Instagram</a>
+        </li>
+        <li>
+          <a href="">Facebook</a>
+        </li>
+        <li>
+          <a href="">WhatsApp</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header">
+    <button class="header__hamburguer"></button>
+    <h1 class="header__title">CASTRAÇÕES | CRAZY CAT GANG</h1>
+    <div class="header__logo"></div>
+  </header>
+  <main>
+    <div class="row1 ">
+      <div class="cat-image">
+        <img src="https://premierpet.com.br/wp-content/uploads/2023/12/model-banner-siames-mobile-v1-1024x1024.png"
+          alt="">
+      </div> 
+      <div class="cat-main">
+        <div class="box">
+          <p> Nome:</p>
+        </div>
+        <div class="box">
+          <p> Peso:</p>
+        </div>
+        <div class="box">
+          <p> Raça:</p>
+        </div>
+        <div class="box">
+          <p> Cor: </p>
+        </div>
+        <div class="box">
+          <p> Sexo: </p>
+        </div>
+        <div class="box">
+          <p> Doença: </p>
+        </div>
       </div>
-    </nav>
-    <header class="header">
-      <button class="header__hamburguer"></button>
-      <h1 class="header__title">CASTRAÇÕES | CRAZY CAT GANG</h1>
-      <div class="header__logo"></div>
-    </header>
-    <script type="module" src="/assets/scripts/util/user.js"></script>
-    <script type="module" src="/assets/scripts/header.js"></script>
-  </body>
+      <div class="row2"> 
+        <p> Histórico: </p>
+      </div>
+      <div class="row3">
+        <div class="anexos">
+          <div class="anexo"> Anexo 1: </div>
+          <div class="anexo"> Anexo 2: </div>
+          <div class="anexo"> Anexo 3: </div>
+          <div class="anexo"> Anexo 4: </div>
+          <div class="anexo"> Anexo 5: </div>
+          <div class="anexo"> Anexo 6: </div>
+        </div>
+        <div class="description"> Descrição Comportamental:
+        
+        </div>
+        <div class="row3">
+          <div class="button1"> Editar</div>
+          <div class="button2"> Remover</div>
+          <div class="button3"> Voltar</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/assets/scripts/util/user.js"></script>
+  <script type="module" src="/assets/scripts/header.js"></script>
+</body>
+
 </html>
