@@ -82,6 +82,7 @@ header {
   list-style: none;
   position: relative;
   
+  
   li {
     color: white;
     display: flex;
@@ -109,6 +110,7 @@ header {
   padding: 20px;
   padding-right: 30%;
   font-size: medium;
+  
 }
 
 .imagem {
@@ -118,6 +120,7 @@ header {
 
 .topicos {
   margin-right: 100px;
+  
 }
 
 .topicos p{
@@ -130,9 +133,10 @@ header {
   display: flex;
   align-content: space-around;
   gap: 10px;
-  padding-left: 20px;
+  padding-left: 80%;;
   /* margin-left: 100%; */
   transition: background-color 0.3s, transform 0.3s; 
+  color: #000000;
 }
 
 /* .botoes:hover {
@@ -143,6 +147,7 @@ header {
   background-color: #d6ad61;
   border-radius: 10px;
   padding: 10px;
+  
   
   
 }
@@ -168,12 +173,14 @@ footer {
 .valores {
   display: flex;
   justify-content: space-around;
+  
 }
 
 #remover {
   background-image: linear-gradient(to bottom, #f50000a1, #5e0202d5);
   border: 2px solid #5c0404;
   transition: background-color 0.3s, transform 0.3s; 
+  
   
 }
 
