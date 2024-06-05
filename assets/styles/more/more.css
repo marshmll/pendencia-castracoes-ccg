@@ -1,0 +1,152 @@
+.main {
+    background-color: #eaeaea;
+    padding: 2rem;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    background-image: url('/assets/images/gatinho-operando.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image {
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cat-main {
+    width: 80%;
+}
+
+.cat-main__box {
+    width: 70%;
+    background-color: #d9d9d9;
+    display: block;
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.cat-main__box label {
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.row2 {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.row2 label {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.cat-historic-span {
+    width: 100%;
+    height: 15rem;
+    resize: vertical;
+    display: block;
+    background-color: #d9d9d9;
+    padding: 1rem;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    align-self: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.attachments {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    align-self: center;
+}
+
+.attachments__box {
+    background-color: #d9d9d9;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.attachments__box label {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.behavior {
+    background-color: #d9d9d9;
+    height: 100%;
+    width: 49%;
+    display: block;
+    padding: .5rem;
+}
+
+.behavior label {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons__button {
+    padding: 1rem 5rem;
+    width: 20rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons__button:hover {
+    transition: 500ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.buttons__button--edit {
+    background-color: #FFCB04;
+}
+
+.buttons__button--remove {
+    background-color: #EF1a2d;
+}
+
+.buttons__button--back {
+    background-color: #00a551;
+}
