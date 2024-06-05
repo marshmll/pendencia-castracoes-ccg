@@ -137,20 +137,10 @@ header {
   /* margin-left: 100%; */
   transition: background-color 0.3s, transform 0.3s; 
   color: #000000;
-}
-
-/* .botoes:hover {
-  transform: scale(1.05);
-} */
-
-.remove {
-  background-color: #d6ad61;
-  border-radius: 10px;
-  padding: 10px;
-  
-  
   
 }
+
+
 
 hr {
   border: none;         /* Remove a borda padrão */
@@ -176,37 +166,45 @@ footer {
   
 }
 
-#remover {
+.remover {
   background-image: linear-gradient(to bottom, #f50000a1, #5e0202d5);
   border: 2px solid #5c0404;
   transition: background-color 0.3s, transform 0.3s; 
-  
+  background-color: #d6ad61;
+  border-radius: 10px;
+  padding: 10px;
   
 }
 
-#remover:hover {
+.remover:hover {
   transform: scale(1.10);
   cursor: pointer;
 }
 
-#editar {
+.editar {
   background-image: linear-gradient(to bottom, #0805b4d5, #050127d3);
   border: 2px solid #03024d;
   transition: background-color 0.3s, transform 0.3s;
+  background-color: #d6ad61;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-#editar:hover {
+.editar:hover {
   transform: scale(1.10);
   cursor: pointer;
 }
 
-#visualizar {
+.visualizar {
   background-image: linear-gradient(to bottom, #05b405b2, #063002d3);
   border: 2px solid #035507;
   transition: background-color 0.3s, transform 0.3s;
+  background-color: #d6ad61;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-#visualizar:hover {
+.visualizar:hover {
   transform: scale(1.10);
   cursor: pointer;
 }
