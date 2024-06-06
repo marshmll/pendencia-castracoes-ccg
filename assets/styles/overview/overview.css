@@ -208,3 +208,8 @@ footer {
   transform: scale(1.10);
   cursor: pointer;
 }
+
+.loader--btn {
+  width: 1rem;
+  height: 1rem;
+}

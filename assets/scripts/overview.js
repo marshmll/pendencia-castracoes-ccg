@@ -132,6 +132,14 @@ async function renderContent() {
             document
                 .getElementById(`remover-${index}`)
                 .addEventListener("click", async () => {
+                    let confirmation = confirm("Deseja mesmo remover o registro?")
+
+                    if (!confirmation) return;
+
+                    document.getElementById(`remover-${index}`).innerHTML = `
+                    <span class="loader loader--btn"></span>
+                    `
+
                     try {
                         const delection = await fetch(
                             `https://ccgapi.vercel.app/api/content/delete/${cat.id}`
@@ -173,7 +181,7 @@ async function renderContent() {
                         if (delection.ok) {
                             // Removendo o elemento da página
                             document.getElementById(`gato-${index}`).remove();
-                            alert("Gato removido com sucesso da lista!");
+                            // alert("Gato removido com sucesso da lista!");
                         } else {
                             // Exibindo um alert de erro caso a remoção não seja bem-sucedida
                             alert(
