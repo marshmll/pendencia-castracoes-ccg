@@ -182,6 +182,10 @@ async function renderManagement() {
         .addEventListener("click", async (e) => {
             e.preventDefault();
 
+            const confirmation = confirm("Deseja mesmo deletar este registro?");
+
+            if (!confirmation) return;
+
             document.querySelector(".form__button--delete").innerHTML = `
                 <span class="form__button--loading"></span>
             `;

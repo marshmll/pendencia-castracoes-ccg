@@ -10,43 +10,48 @@
         <title>Geral | Castrações | Crazy Cat Gang</title>
     </head>
     <body>
-        <nav class="menu menu--hidden">
-            <button class="menu__btn">x</button>
-            <div>
-                <div class="menu__logo"></div>
-                <h2 class="menu__title">CRAZY CAT GANG</h2>
-                <h3 class="menu__subtitle">NAVEGAÇÃO</h3>
-                <ul class="menu__list">
-                    <li>
-                        <a href="/">Login</a>
-                    </li>
-                    <li>
-                        <a href="/pages/overview.html">Visão Geral</a>
-                    </li>
-                    <li>
-                        <a href="/pages/management.html?id=new"
-                            >Cadastrar Gato</a
-                        >
-                    </li>
-                </ul>
-                <h3 class="menu__subtitle">REDES SOCIAIS</h3>
-                <ul class="menu__list">
-                    <li>
-                        <a href="">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="">WhatsApp</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <header class="header">
+            <nav class="menu menu--hidden">
+                <button class="menu__btn">x</button>
+                <div>
+                    <div class="menu__logo"></div>
+                    <h2 class="menu__title">CRAZY CAT GANG</h2>
+                    <h3 class="menu__subtitle">NAVEGAÇÃO</h3>
+                    <ul class="menu__list">
+                        <li>
+                            <a href="/">Login</a>
+                        </li>
+                        <li>
+                            <a href="/pages/overview.html">Visão Geral</a>
+                        </li>
+                        <li>
+                            <a href="/pages/management.html?id=new"
+                                >Cadastrar Gato</a
+                            >
+                        </li>
+                    </ul>
+                    <h3 class="menu__subtitle">REDES SOCIAIS</h3>
+                    <ul class="menu__list">
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="">WhatsApp</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li>
+                            <button class="menu__exit">SAIR</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <button class="header__hamburguer"></button>
             <h1 class="header__title">CASTRAÇÕES | CRAZY CAT GANG</h1>
             <div class="header__logo"></div>
@@ -74,35 +79,37 @@
                 </a>
                 <hr id="upper" />
             </section>
-            <section>
-                <ul id="lista">
-                    <span class="loader"></span>
-                </ul>
-            </section>
-            <section id="info">
-                <h3>INFORMAÇÕES</h3>
-                <hr />
-                <div class="valores">
-                    <div>Quantidade:</div>
-                    <div id="valorQuantidade"></div>
-                </div>
-                <div class="valores">
-                    <div>Pendentes:</div>
-                    <div id="valorPendentes"></div>
-                </div>
-                <div class="valores">
-                    <div>Concluídos:</div>
-                    <div id="valorConcluídos"></div>
-                </div>
-                <div class="valores">
-                    <div>Machos:</div>
-                    <div id="valorMachos"></div>
-                </div>
-                <div class="valores">
-                    <div>Fêmeas:</div>
-                    <div id="valorFemeas"></div>
-                </div>
-            </section>
+            <div class="container">
+                <section>
+                    <ul id="lista">
+                        <span class="loader"></span>
+                    </ul>
+                </section>
+                <section id="info">
+                    <h3>INFORMAÇÕES</h3>
+                    <hr />
+                    <div class="valores">
+                        <span>Quantidade:</span>
+                        <div id="valorQuantidade"></div>
+                    </div>
+                    <div class="valores">
+                        <span>Pendentes:</span>
+                        <div id="valorPendentes"></div>
+                    </div>
+                    <div class="valores">
+                        <span>Concluídos:</span>
+                        <div id="valorConcluídos"></div>
+                    </div>
+                    <div class="valores">
+                        <span>Machos:</span>
+                        <div id="valorMachos"></div>
+                    </div>
+                    <div class="valores">
+                        <span>Fêmeas:</span>
+                        <div id="valorFemeas"></div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__content">
@@ -162,6 +169,7 @@
         </footer>
         <script type="module" src="/assets/scripts/util/user.js"></script>
         <script type="module" src="/assets/scripts/header.js"></script>
+        <script type="module" src="/assets/scripts/menu.js"></script>
         <script type="module" src="/assets/scripts/sidebar.js"></script>
         <script type="module" src="/assets/scripts/overview.js"></script>
     </body>

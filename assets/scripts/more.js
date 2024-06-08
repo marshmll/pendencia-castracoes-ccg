@@ -92,6 +92,14 @@ async function setCatContent() {
         .addEventListener("click", async (e) => {
             e.preventDefault();
 
+            const confirmation = confirm("Deseja mesmo deletar este registro?");
+
+            if (!confirmation) return;
+
+            document.querySelector(".buttons__button--remove").innerHTML = `
+                <span class="loader"></span>
+            `;
+
             try {
                 const response = await fetch(
                     `https://ccgapi.vercel.app/api/content/delete/${catId}`

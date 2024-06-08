@@ -7,6 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-right: 8rem;
 }
 
 .row1 {
@@ -31,7 +32,7 @@
 
 .cat-main__box {
     width: 70%;
-    background-color: #d9d9d9;
+    background-color: #d9d9d9AA;
     display: block;
     height: 3rem;
     margin-bottom: 1rem;
@@ -62,11 +63,12 @@
 
 .cat-historic-span {
     width: 100%;
-    height: 15rem;
+    height: max-content;
     resize: vertical;
     display: block;
-    background-color: #d9d9d9;
+    background-color: #d9d9d9AA;
     padding: 1rem;
+    line-height: 1.2rem;
 }
 
 .row3 {
@@ -86,7 +88,7 @@
 }
 
 .attachments__box {
-    background-color: #d9d9d9;
+    background-color: #d9d9d9AA;
     height: 3.5rem;
     margin-bottom: 1rem;
     padding: .5rem;
@@ -100,9 +102,13 @@
     margin-bottom: .5rem;
 }
 
+.attachments__box a {
+    text-decoration: underline;
+}
+
 .behavior {
-    background-color: #d9d9d9;
-    height: 100%;
+    background-color: #d9d9d9AA;
+    min-height: 100%;
     width: 49%;
     display: block;
     padding: .5rem;
@@ -149,4 +155,71 @@
 
 .buttons__button--back {
     background-color: #00a551;
+}
+
+.loader {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding-right: 2rem;
+    }
+
+    .image {
+        width: 15rem;
+        height: 15rem
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons__button {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row1 {
+        flex-direction: column;
+    }
+
+    .image {
+        margin-bottom: 1rem;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .cat-main {
+        width: 100%;
+    }
+
+    .cat-main__box {
+        width: 100%;
+    }
+
+    .row2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cat-historic-span {
+        width: 100%;
+    }
+
+    .row3 {
+        flex-direction: column-reverse;
+        height: max-content;
+    }
+
+    .attachments {
+        width: 100%;
+    }
+
+    .behavior {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

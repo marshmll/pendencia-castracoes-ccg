@@ -61,6 +61,14 @@
   .menu__list:last-child {
     margin-bottom: 0;
   }
+
+  .menu__exit {
+    background-color: #ff5e00;
+    border: none;
+    padding: .2rem.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 
 .menu--hidden {
