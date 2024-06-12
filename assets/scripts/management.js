@@ -182,6 +182,11 @@ async function renderManagement() {
         .addEventListener("click", async (e) => {
             e.preventDefault();
 
+            if (catId == "new") {
+                alert("Não é possível remover um registro que não está salvo.");
+                return;
+            }
+
             const confirmation = confirm("Deseja mesmo deletar este registro?");
 
             if (!confirmation) return;
